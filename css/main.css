@@ -1,0 +1,156 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Rubik', sans-serif;
+  text-rendering: geometricPrecision; }
+
+.header {
+  z-index: 100; }
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 600; }
+
+.main {
+  width: 100%; }
+  .main .ipSearcher {
+    z-index: 0;
+    height: 40vh;
+    background-image: url("../images/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .main .ipSearcher .col {
+      margin: 0px; }
+    .main .ipSearcher .ipSearcherBox {
+      height: inherit;
+      border-radius: 0.9rem;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      height: 3.75rem;
+      width: 80%; }
+      .main .ipSearcher .ipSearcherBox .input {
+        display: grid;
+        place-content: center;
+        width: 80%; }
+        .main .ipSearcher .ipSearcherBox .input input {
+          border: none;
+          background-color: transparent;
+          margin-left: -0.9375rem; }
+        .main .ipSearcher .ipSearcherBox .input input:focus {
+          outline: none; }
+      .main .ipSearcher .ipSearcherBox .button {
+        display: grid;
+        place-content: center;
+        width: 20%;
+        background-color: black; }
+        .main .ipSearcher .ipSearcherBox .button button {
+          border: none;
+          background-color: transparent; }
+  .main .ipData {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main .ipData .row {
+      width: 80%; }
+      .main .ipData .row .col {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0.9rem;
+        width: 100%; }
+        .main .ipData .row .col .dataItem {
+          margin-bottom: 1.5rem; }
+          .main .ipData .row .col .dataItem .dataTitle {
+            font-size: .6rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            color: #969696; }
+          .main .ipData .row .col .dataItem .dataInfo {
+            font-weight: bold; }
+
+@media screen and (min-width: 769px) {
+  .main .ipSearcher {
+    height: 35vh; }
+    .main .ipSearcher .row .col .ipSearcherBox {
+      width: 40%; }
+      .main .ipSearcher .row .col .ipSearcherBox .input {
+        width: 89%;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 8%; }
+        .main .ipSearcher .row .col .ipSearcherBox .input input {
+          width: 100%;
+          font-weight: 600;
+          font-size: 1.1rem; }
+        .main .ipSearcher .row .col .ipSearcherBox .input input:focus {
+          font-weight: 600;
+          font-size: 1.1rem; }
+      .main .ipSearcher .row .col .ipSearcherBox .button {
+        width: 11%; }
+      .main .ipSearcher .row .col .ipSearcherBox .button:hover {
+        background-color: #3f3f3f; }
+  .main .ipData {
+    z-index: 100; }
+    .main .ipData .row .col {
+      position: relative;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .main .ipData .row .col .dataItem {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; }
+        .main .ipData .row .col .dataItem .dataTitle {
+          font-size: .8rem;
+          font-weight: 700; }
+        .main .ipData .row .col .dataItem .dataInfo {
+          text-align: left;
+          font-size: 1.4rem;
+          font-weight: 700;
+          white-space: normal;
+          width: 200px; }
+      .main .ipData .row .col .dataItem:nth-of-type(1)::after {
+        content: '';
+        position: absolute;
+        top: 18%;
+        left: 23%;
+        height: 65%;
+        border-right: 1px solid #cfcfcf; }
+      .main .ipData .row .col .dataItem:nth-of-type(2)::after {
+        content: '';
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        height: 65%;
+        border-right: 1px solid #cfcfcf; }
+      .main .ipData .row .col .dataItem:nth-of-type(3)::after {
+        content: '';
+        position: absolute;
+        top: 18%;
+        left: 75%;
+        height: 65%;
+        border-right: 1px solid #cfcfcf; }
+  .main .map {
+    height: 65vh; }
+    .main .map #map {
+      z-index: 1;
+      height: inherit; } }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
